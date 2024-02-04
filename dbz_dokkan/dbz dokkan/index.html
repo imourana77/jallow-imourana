@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Dokkan Battle</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-
+        lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/logo2.png" alt="">
+        <button id="theme">dark</button>
+        <nav>
+            <a href="#">Accueil</a><a href="#">Jeu</a><a href="#">Personnage</a>
+        </nav>
+        <div class="burger">
+            <img src="./assets/images/dragonball.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <img src="./assets/images/logo.png" alt="logo dokkan battle" class="logo">
+        </section>
+
+        <section id="about">
+            <img src="./assets/images/goku.png" alt="">
+            <div class="about_text">
+                <h2>Dragon Ball Z Dokkan Battle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, mollitia? Molestias impedit natus
+                    autem eaque nisi quam illo porro, dolorem aliquid quidem, magni eum pariatur quae cum dolore
+                    accusamus deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odit, ex
+                    tempore atque rem nemo similique soluta facilis animi sunt officia hic a reprehenderit itaque
+                    quisquam blanditiis veritatis, modi ut?</p>
+            </div>
+        </section>
+
+        <section id="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/slider.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/slider2.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/slider3.jpeg" alt="">
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </section>
+
+        <section id="cards">
+            <ul>
+                <li data-filter="all">all</li>
+                <li data-filter="mechant">mechant</li>
+                <li data-filter="saiyan">saiyan</li>
+            </ul>
+            <div class="cards-container">
+                <div class="card filtr-item" data-category="mechant">
+                    <a href="./assets/images/freezer.png">
+                        <img src="./assets/images/freezer.png" alt="">
+                    </a>
+                </div>
+
+                <div class="card filtr-item" data-category="saiyan">
+                    <a href="./assets/images/vegeta.png">
+                        <img src="./assets/images/vegeta.png" alt="">
+                    </a>
+                </div>
+
+                <div class="card filtr-item" data-category="saiyan">
+                    <a href="./assets/images/card vegeto.jpeg">
+                        <img src="./assets/images/vegeto.png" alt="">
+                    </a>
+                </div>
+
+                <div class="card filtr-item" data-category="saiyan">
+                    <a href="./assets/images/goku migate.png">
+                        <img src="./assets/images/goku migate.png" alt="">
+                    </a>
+                </div>
+
+                <div class="card filtr-item" data-category="mechant">
+                    <a href="./assets/images/cell.png">
+                        <img src="./assets/images/cell.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="form">
+
+            <div class="message-error">
+                <h1>Une erreur est survenue lors de l'envoi du formulaire</h1>
+            </div>
+            <div class="message-success">
+                <h1>Votre formulaire a bien été envoyé</h1>
+            </div>
+            <form id="formulaire">
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" />
+                </div>
+                <div>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <div>
+                    <label for="radios">Radio 1 :</label>
+                    <input type="radio" name="radios" id="radio1" value="radio1" />
+
+                    <label for="radio1">Radio 2</label>
+                    <input type="radio" name="radios" id="radio2" value="radio2" />
+
+                    <label for="radio2">Radio 3</label>
+                    <input type="radio" name="radios" id="radio3" value="radio3" />
+                </div>
+                <div>
+                    <label for="axe">Mon axe :</label>
+                    <select name="axe" id="axe">
+                        <option value="">Choisir mon axe</option>
+                        <option value="axe1">Axe 1</option>
+                        <option value="axe2">Axe 2</option>
+                        <option value="axe3">Axe 3</option>
+                    </select>
+                </div>
+
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="./js/background.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/formValid.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+        const lightbox = new SimpleLightbox(".card a")
+
+        const options = {
+            gutterPixels: 50
+        }
+
+        const filterizr = new Filterizr('.cards-container', options);
+
+
+    </script>
+</body>
+
+</html>
